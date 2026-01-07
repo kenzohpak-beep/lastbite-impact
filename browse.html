@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LastBite | Browse Deals</title>
+  <meta name="description" content="Browse end-of-day surplus deals from demo partner bakeries and shops." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="LastBite home">
+        <span class="mark" aria-hidden="true">LB</span>
+        <span class="brandText">
+          <strong>LastBite</strong>
+          <small>Browse Deals</small>
+        </span>
+      </a>
+
+      <button class="menuBtn" id="menuBtn" aria-expanded="false" aria-controls="menu">
+        <span class="sr">Open menu</span>
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav class="menu" id="menu" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a class="isActive" href="browse.html">Browse Deals</a>
+        <a href="how-it-works.html">How it Works</a>
+        <a href="mission.html">Our Mission</a>
+        <a href="impact.html">Impact Tracker</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="dealsHeader">
+          <div class="sectionHead" style="margin-bottom:0;">
+            <h2>Browse Deals (demo listings)</h2>
+            <p class="muted">
+              These are sample surplus deals for a prototype. LastBite is not affiliated with the businesses listed.
+            </p>
+          </div>
+
+          <div class="controls">
+            <input id="dealSearch" class="input" type="text" placeholder="Search (e.g., bagels, croissants, cheesecake)" />
+
+            <select id="partnerFilter" aria-label="Filter by partner">
+              <option value="all">All partners</option>
+              <option value="cobs bread">COBS Bread</option>
+              <option value="sanremo bakery">SanRemo Bakery</option>
+              <option value="dufflet pastries">Dufflet Pastries</option>
+              <option value="uncle tetsu’s cheesecake">Uncle Tetsu’s Cheesecake</option>
+              <option value="dimpflmeier bakery">Dimpflmeier Bakery</option>
+              <option value="st. urbain bagel bakery">St. Urbain Bagel Bakery</option>
+              <option value="athens pastries">Athens Pastries</option>
+              <option value="nadege patisserie">Nadege Patisserie</option>
+              <option value="kettleman’s bagels">Kettleman’s Bagels</option>
+              <option value="krispy kreme">Krispy Kreme</option>
+            </select>
+
+            <select id="tagFilter" aria-label="Filter by tag">
+              <option value="all">All tags</option>
+              <option value="pickup">Pickup</option>
+              <option value="delivery">Delivery</option>
+              <option value="vegetarian">Vegetarian</option>
+              <option value="contains nuts">Contains nuts</option>
+              <option value="best value">Best value</option>
+              <option value="limited">Limited</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="dealsGrid">
+          <!-- ===================== COBS Bread ===================== -->
+          <article class="deal" data-deal-card
+            data-partner="COBS Bread"
+            data-title="End-of-Day Bread Box (3 items)"
+            data-tags="pickup,best value,vegetarian">
+            <div class="dealTop">
+              <div class="partner">COBS Bread</div>
+              <div class="pill">60% off</div>
+            </div>
+            <div class="dealTitle">End-of-Day Bread Box (3 items)</div>
+            <p class="dealMeta">Pickup window: 8:15–8:45 PM • Surprise mix (loaf + buns)</p>
+            <div class="priceRow"><div class="price">$8</div><div class="strike">$20</div></div>
+            <div class="tags"><span class="tag">Pickup</span><span class="tag">Vegetarian</span><span class="tag">Best value</span></div>
+            <button class="btn btnPrimary btnBlock" type="button">Reserve (demo)</button>
+          </article>
+
+          <article class="deal" data-deal-card
+            data-partner="COBS Bread"
+            data-title="Savory Bake Pack (2 items)"
+            data-tags="pickup,limited">
+            <div class="dealTop">
+              <div class="partner">COBS Bread</div>
+              <div class="pill">45% off</div>
+            </div>
+            <div class="dealTitle">Savory Bake Pack (2 items)</div>
+            <p class="dealMeta">Pickup window: 8:15–8:45 PM • Assorted savory items</p>
+            <div class="priceRow"><div class="price">$7</div><div class="strike">$13</div></div>
+            <div class="tags"><span class="tag">Pickup</span><span class="tag">Limited</span></div>
+            <button class="btn btnPrimary btnBlock" type="button">Reserve (demo)</button>
+          </article>
+
+          <!-- ===================== SanRemo Bakery ===================== -->
+          <article class="deal" data-deal-card
+            data-partner="SanRemo Bakery"
+            data-title="Pastry Surprise Bag (6 pastries)"
+            data-tags="pickup,limited,contains nuts">
+            <div class="dealTop">
+              <div class="partner">SanRemo Bakery</div>
+              <div class="pill">55% off</div>
+            </div>
+            <div class="dealTitle">Pastry Surprise Bag (6 pastries)</div>
+            <p class="dealMeta">Pickup window: 9:00–9:30 PM • May contain nuts</p>
+            <div class="priceRow"><div class="price">$11</div><div class="strike">$24</div></div>
+            <div class="tags"><span class="tag">Pickup</span><span class="tag">Limited</span><span class="tag">Contains nuts</span></div>
+            <button class="btn btnPrimary btnBlock" type="button">Reserve (demo)</button>
+          </article>
+
+          <article class="deal" data-deal-card
+            data-partner="SanRemo Bakery"
+            data-title="Cannoli + Cookie Combo"
+            data-tags="pickup,vegetarian">
+            <div class="dealTop">
+              <div class="partner">SanRemo Bakery</div>
+              <div class="pill">40% off</div>
+            </div>
+            <div class="dealTitle">Cannoli + Cookie Combo</div>
+            <p class="dealMeta">Pickup window: 9:00–9:30 PM • 2 cannoli + cookie mix</p>
+            <div class="priceRow"><div class="price">$12</div><div class="strike">$20</div></div>
+            <div class="tags"><span class="tag">Pickup</span><span class="tag">Vegetarian</span></div>
+            <button class="btn btnPrimary btnBlock" type="button">Reserve (demo)</button>
+          </article>
+
+          <!-- ===================== Dufflet Pastries ===================== -->
+          <article class="deal" data-deal-card
+            data-partner="Dufflet Pastries"
+            data-title="Cake Slice Duo"
+            data-tags="pickup,vegetarian,limited">
+            <div class="dealTop">
+              <div class="partner">Dufflet Pastries</div>
+              <div class="pill">45% off</div>
+            </div>
+            <div class="dealTitle">Cake Slice Duo</div>
+            <p class="dealMeta">Pickup window: 7:45–8:15 PM • Two assorted slices</p>
+            <div class="priceRow"><div class="price">$9</div><div class="strike">$16</div></div>
+            <div class="tags"><span class="tag">Pickup</span><span class="tag">Vegetarian</span><span class="tag">Limited</span></div>
+            <button class="btn btnPrimary btnBlock" type="button">Reserve (demo)</button>
+          </article>
+
+          <article class="deal" data-deal-card
+            data-partner="Dufflet Pastries"
+            data-title="Cookie & Bar Box (8 pieces)"
+            data-tags="pickup,best value,vegetarian">
+            <div class="dealTop">
+              <div class="partner">Dufflet Pastries</div>
+              <div class="pill">50% off</div>
+            </div>
+            <div class="dealTitle">Cookie & Bar Box (8 pieces)</div>
+            <p class="dealMeta">Pickup window: 7:45–8:15 PM • Assorted cookies/bars</p>
+            <div class="priceRow"><div class="price">$10</div><div class="strike">$20</div></div>
+            <div class="tags"><span class="tag">Pickup</span><span class="tag">Vegetarian</span><span class="tag">Best value</span></div>
+            <button class="btn btnPrimary btnBlock" type="button">Reserve (demo)</button>
+          </article>
+
+          <!-- ===================== Uncle Tetsu’s Cheesecake ===================== -->
+          <article class="deal" data-deal-card
+            data-partner="Uncle Tetsu’s Cheesecake"
+            data-title="Mini Cheesecake (end-of-day)"
+            data-tags="pickup,vegetarian,limited">
+            <div class="dealTop">
+              <div class="partner">Uncle Tetsu’s Cheesecake</div>
+              <div class="pill">50% off</div>
+            </div>
+            <div class="dealTitle">Mini Cheesecake (end-of-day)</div>
+            <p class="dealMeta">Pickup window: 8:30–9:00 PM • While supplies last</p>
+            <div class="priceRow"><div class="price">$10</div><div class="strike">$20</div></div>
+            <div class="tags"><span class="tag">Pickup</span><span class="tag">Vegetarian</span><span class="tag">Limited</span></div>
+            <button class="btn btnPrimary btnBlock" type="button">Reserve (demo)</button>
+          </article>
+
+          <article class="deal" data-deal-card
+            data-partner="Uncle Tetsu’s Cheesecake"
+            data-title="Cheesecake Slice Trio"
+            data-tags="pickup,vegetarian">
+            <div class="dealTop">
+              <div class="partner">Uncle Tetsu’s Cheesecake</div>
+              <div class="pill">40% off</div>
+            </div>
+            <div class="dealTitle">Cheesecake Slice Trio</div>
+            <p class="dealMeta">Pickup window: 8:30–9:00 PM • 3 assorted slices</p>
+            <div class="priceRow"><div class="price">$12</div><div class="strike">$20</div></div>
+            <div class="tags"><span class="tag">Pickup</span><span class="tag">Vegetarian</span></div>
+            <button class="btn btnPrimary btnBlock" type="button">Reserve (demo)</button>
+          </article>
+
+          <!-- ===================== Dimpflmeier Bakery ===================== -->
+          <article class="deal" data-deal-card
+            data-partner="Dimpflmeier Bakery"
+            data-title="Pretzel + Roll Bundle (6 items)"
+            data-tags="pickup,best value,vegetarian">
+            <div class="dealTop">
+              <div class="partner">Dimpflmeier Bakery</div>
+              <div class="pill">60% off</div>
+            </div>
+            <div class="dealTitle">Pretzel + Roll Bundle (6 items)</div>
+            <p class="dealMeta">Pickup window: 6:45–7:15 PM • Assorted pretzels/rolls</p>
+            <div class="priceRow"><div class="price">$7</div><div class="strike">$18</div></div>
+            <div class="tags"><span class="tag">Pickup</span><span class="tag">Vegetarian</span><span class="tag">Best value</span></div>
+            <button class="btn btnPrimary btnBlock" type="button">Reserve (demo)</button>
+          </article>
+
+          <article class="deal" data-deal-card
+            data-partner="Dimpflmeier Bakery"
+            data-title="Sandwich Bread Pair (2 loaves)"
+            data-tags="pickup,vegetarian">
+            <div class="dealTop">
+              <div class="partner">Dimpflmeier Bakery</div>
+              <div class="pill">45% off</div>
+            </div>
+            <div class="dealTitle">Sandwich Bread Pair (2 loaves)</div>
+            <p class="dealMeta">Pickup window: 6:45–7:15 PM • Great for freezing</p>
+            <div class="priceRow"><div class="price">$8</div><div class="strike">$15</div></div>
+            <div class="tags"><span class="tag">Pickup</span><span class="tag">Vegetarian</span></div>
+            <button class="btn btnPrimary btnBlock" type="button">Reserve (demo)</button>
+          </article>
+
+          <!-- ===================== St. Urbain Bagel Bakery ===================== -->
+          <article class="deal" data-deal-card
+            data-partner="St. Urbain Bagel Bakery"
+            data-title="Bagel Dozen (assorted)"
+            data-tags="pickup,best value,vegetarian">
+            <div class="dealTop">
+              <div class="partner">St. Urbain Bagel Bakery</div>
+              <div class="pill">50% off</div>
+            </div>
+            <div class="dealTitle">Bagel Dozen (assorted)</div>
+            <p class="dealMeta">Pickup window: 4:45–5:15 PM • Assorted flavors</p>
+            <div class="priceRow"><div class="price">$8</div><div class="strike">$16</div></div>
+            <div class="tags"><span class="tag">Pickup</span><span class="tag">Vegetarian</span><span class="tag">Best value</span></div>
+            <button class="btn btnPrimary btnBlock" type="button">Reserve (demo)</button>
+          </article>
+
+          <article class="deal" data-deal-card
+            data-partner="St. Urbain Bagel Bakery"
+            data-title="Bagel + Spread Duo Pack"
+            data-tags="pickup,vegetarian,limited">
+            <div class="dealTop">
+              <div class="partner">St. Urbain Bagel Bakery</div>
+              <div class="pill">45% off</div>
+            </div>
+            <div class="dealTitle">Bagel + Spread Duo Pack</div>
+            <p class="dealMeta">Pickup window: 4:45–5:15 PM • 6 bagels + 2 spreads</p>
+            <div class="priceRow"><div class="price">$12</div><div class="strike">$22</div></div>
+            <div class="tags"><span class="tag">Pickup</span><span class="tag">Vegetarian</span><span class="tag">Limited</span></div>
+            <button class="btn btnPrimary btnBlock" type="button">Reserve (demo)</button>
+          </article>
+
+          <!-- ===================== Athens Pastries ===================== -->
+          <article class="deal" data-deal-card
+            data-partner="Athens Pastries"
+            data-title="Baklava Trio Box"
+            data-tags="pickup,contains nuts,limited">
+            <div class="dealTop">
+              <div class="partner">Athens Pastries</div>
+              <div class="pill">45% off</div>
+            </div>
+            <div class="dealTitle">Baklava Trio Box</div>
+            <p class="dealMeta">Pickup window: 8:00–8:30 PM • Contains nuts</p>
+            <div class="priceRow"><div class="price">$12</div><div class="strike">$22</div></div>
+            <div class="tags"><span class="tag">Pickup</span><span class="tag">Contains nuts</span><span class="tag">Limited</span></div>
+            <button class="btn btnPrimary btnBlock" type="button">Reserve (demo)</button>
+          </article>
+
+          <article class="deal" data-deal-card
+            data-partner="Athens Pastries"
+            data-title="Greek Cookie Box (10 pieces)"
+            data-tags="pickup,best value,vegetarian">
+            <div class="dealTop">
+              <div class="partner">Athens Pastries</div>
+              <div class="pill">50% off</div>
+            </div>
+            <div class="dealTitle">Greek Cookie Box (10 pieces)</div>
+            <p class="dealMeta">Pickup window: 8:00–8:30 PM • Assorted cookies</p>
+            <div class="priceRow"><div class="price">$10</div><div class="strike">$20</div></div>
+            <div class="tags"><span class="tag">Pickup</span><span class="tag">Vegetarian</span><span class="tag">Best value</span></div>
+            <button class="btn btnPrimary btnBlock" type="button">Reserve (demo)</button>
+          </article>
+
+          <!-- ===================== Nadege Patisserie ===================== -->
+          <article class="deal" data-deal-card
+            data-partner="Nadege Patisserie"
+            data-title="Macaron 8-Pack (assorted)"
+            data-tags="pickup,vegetarian,limited">
+            <div class="dealTop">
+              <div class="partner">Nadege Patisserie</div>
+              <div class="pill">40% off</div>
+            </div>
+            <div class="dealTitle">Macaron 8-Pack (assorted)</div>
+            <p class="dealMeta">Pickup window: 8:45–9:15 PM • Assorted flavors</p>
+            <div class="priceRow"><div class="price">$14</div><div class="strike">$24</div></div>
+            <div class="tags"><span class="tag">Pickup</span><span class="tag">Vegetarian</span><span class="tag">Limited</span></div>
+            <button class="btn btnPrimary btnBlock" type="button">Reserve (demo)</button>
+          </article>
+
+          <article class="deal" data-deal-card
+            data-partner="Nadege Patisserie"
+            data-title="Croissant Duo + Mini Pastries"
+            data-tags="pickup,vegetarian">
+            <div class="dealTop">
+              <div class="partner">Nadege Patisserie</div>
+              <div class="pill">45% off</div>
+            </div>
+            <div class="dealTitle">Croissant Duo + Mini Pastries</div>
+            <p class="dealMeta">Pickup window: 8:45–9:15 PM • Mixed selection</p>
+            <div class="priceRow"><div class="price">$13</div><div class="strike">$24</div></div>
+            <div class="tags"><span class="tag">Pickup</span><span class="tag">Vegetarian</span></div>
+            <button class="btn btnPrimary btnBlock" type="button">Reserve (demo)</button>
+          </article>
+
+          <!-- ===================== Kettleman’s Bagels ===================== -->
+          <article class="deal" data-deal-card
+            data-partner="Kettleman’s Bagels"
+            data-title="Bagel + Cream Cheese Kit"
+            data-tags="delivery,best value,vegetarian">
+            <div class="dealTop">
+              <div class="partner">Kettleman’s Bagels</div>
+              <div class="pill">45% off</div>
+            </div>
+            <div class="dealTitle">Bagel + Cream Cheese Kit</div>
+            <p class="dealMeta">Delivery window: 9:00–9:45 PM • 6 bagels + spread</p>
+            <div class="priceRow"><div class="price">$13</div><div class="strike">$24</div></div>
+            <div class="tags"><span class="tag">Delivery</span><span class="tag">Vegetarian</span><span class="tag">Best value</span></div>
+            <button class="btn btnPrimary btnBlock" type="button">Reserve (demo)</button>
+          </article>
+
+          <article class="deal" data-deal-card
+            data-partner="Kettleman’s Bagels"
+            data-title="Half-Dozen Bagel Mix"
+            data-tags="pickup,vegetarian,limited">
+            <div class="dealTop">
+              <div class="partner">Kettleman’s Bagels</div>
+              <div class="pill">40% off</div>
+            </div>
+            <div class="dealTitle">Half-Dozen Bagel Mix</div>
+            <p class="dealMeta">Pickup window: 9:00–9:30 PM • Assorted bagels</p>
+            <div class="priceRow"><div class="price">$7</div><div class="strike">$12</div></div>
+            <div class="tags"><span class="tag">Pickup</span><span class="tag">Vegetarian</span><span class="tag">Limited</span></div>
+            <button class="btn btnPrimary btnBlock" type="button">Reserve (demo)</button>
+          </article>
+
+          <!-- ===================== Krispy Kreme ===================== -->
+          <article class="deal" data-deal-card
+            data-partner="Krispy Kreme"
+            data-title="Assorted Doughnut Dozen"
+            data-tags="pickup,best value,vegetarian">
+            <div class="dealTop">
+              <div class="partner">Krispy Kreme</div>
+              <div class="pill">50% off</div>
+            </div>
+            <div class="dealTitle">Assorted Doughnut Dozen</div>
+            <p class="dealMeta">Pickup window: 9:30–10:00 PM • Assorted selection</p>
+            <div class="priceRow"><div class="price">$10</div><div class="strike">$20</div></div>
+            <div class="tags"><span class="tag">Pickup</span><span class="tag">Vegetarian</span><span class="tag">Best value</span></div>
+            <button class="btn btnPrimary btnBlock" type="button">Reserve (demo)</button>
+          </article>
+
+          <article class="deal" data-deal-card
+            data-partner="Krispy Kreme"
+            data-title="Original Glazed Half-Dozen"
+            data-tags="pickup,vegetarian,limited">
+            <div class="dealTop">
+              <div class="partner">Krispy Kreme</div>
+              <div class="pill">40% off</div>
+            </div>
+            <div class="dealTitle">Original Glazed Half-Dozen</div>
+            <p class="dealMeta">Pickup window: 9:30–10:00 PM • Limited quantity</p>
+            <div class="priceRow"><div class="price">$8</div><div class="strike">$13</div></div>
+            <div class="tags"><span class="tag">Pickup</span><span class="tag">Vegetarian</span><span class="tag">Limited</span></div>
+            <button class="btn btnPrimary btnBlock" type="button">Reserve (demo)</button>
+          </article>
+        </div>
+
+        <div class="callout" style="margin-top:14px;">
+          <div>
+            <strong>Note on availability:</strong>
+            <p class="muted">
+              Surplus is unpredictable. In the real app, listings appear near closing time and can sell out quickly.
+            </p>
+          </div>
+          <a class="btn btnGhost" href="how-it-works.html">How it works</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footGrid">
+      <div class="footBrand">
+        <span class="mark" aria-hidden="true">LB</span>
+        <div>
+          <strong>LastBite</strong>
+          <div class="muted">Surplus-only. Impact-first.</div>
+        </div>
+      </div>
+
+      <div class="footLinks">
+        <a href="index.html">Home</a>
+        <a href="mission.html">Our Mission</a>
+        <a href="impact.html">Impact</a>
+      </div>
+
+      <div class="fine">© <span id="year"></span> LastBite.</div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
