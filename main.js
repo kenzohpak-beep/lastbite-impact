@@ -15,7 +15,18 @@
       });
     });
   }
+  // Header compact on scroll (collapses quickly)
+  const header = document.querySelector(".header");
+  if (header) {
+    const THRESHOLD_PX = 20; // "collapse faster" = small threshold
 
+    const onScroll = () => {
+      header.classList.toggle("isCompact", window.scrollY > THRESHOLD_PX);
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll(); // set initial state
+  }
   // Footer year
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
