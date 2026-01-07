@@ -3,24 +3,21 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LastBite | Impact</title>
-  <meta name="description" content="LastBite rescues end-of-day surplus meals at big discounts. Track food and CO₂ saved, dollars saved, and donations." />
-  <meta name="theme-color" content="#16a34a" />
-
+  <title>LastBite | Home</title>
+  <meta name="description" content="LastBite is an end-of-day surplus food platform: 40–70% off pickup or delivery, reducing food waste and donating 5% of profits to WFP." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <!-- Top nav -->
   <header class="header">
     <div class="container nav">
-      <a class="brand" href="#top" aria-label="LastBite home">
+      <a class="brand" href="index.html" aria-label="LastBite home">
         <span class="mark" aria-hidden="true">LB</span>
         <span class="brandText">
           <strong>LastBite</strong>
-          <small>Impact</small>
+          <small>Save food. Save money.</small>
         </span>
       </a>
 
@@ -30,359 +27,141 @@
       </button>
 
       <nav class="menu" id="menu" aria-label="Primary">
-        <a href="#metrics">Metrics</a>
-        <a href="#story">How it works</a>
-        <a href="#timeline">Timeline</a>
-        <a href="#method">Method</a>
-        <a class="btn btnPrimary" href="#cta">Join beta</a>
+        <a class="isActive" href="index.html">Home</a>
+        <a href="browse.html">Browse Deals</a>
+        <a href="how-it-works.html">How it Works</a>
+        <a href="mission.html">Our Mission</a>
+        <a href="impact.html">Impact Tracker</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <!-- Hero -->
-    <section id="top" class="hero">
+    <section class="hero">
       <div class="container heroGrid">
-        <div class="heroCopy">
+        <div>
           <p class="kicker">End-of-day discounted food platform</p>
-          <h1>Rescue surplus food.<br/>Make meals affordable.<br/>Prove it with numbers.</h1>
-
+          <h1>Big discounts on surplus food.<br/>Real impact, built in.</h1>
           <p class="lead">
-            LastBite helps restaurants, cafés, and groceries sell surplus items near closing time.
-            Customers get <strong>40–70% off</strong> for pickup or delivery, while reducing waste.
+            LastBite helps restaurants, cafés, and bakeries sell end-of-day surplus for
+            <strong>40–70% off</strong>. Customers get affordable meals for pickup or delivery,
+            and perfectly good food avoids the bin.
           </p>
 
           <div class="heroBadges" role="list">
             <span class="badge">Surplus-only marketplace</span>
-            <span class="badge">Off-peak operations</span>
+            <span class="badge">Closing-time pickup/delivery</span>
             <span class="badge">5% of profits donated to WFP</span>
           </div>
 
           <div class="heroActions">
-            <a class="btn btnPrimary" href="#cta">Get early access</a>
-            <a class="btn btnGhost" href="#story">See how impact is created</a>
+            <a class="btn btnPrimary" href="browse.html">Browse demo deals</a>
+            <a class="btn btnGhost" href="how-it-works.html">See how it works</a>
           </div>
 
           <p class="fine">
-            Replace the sample totals below with your real production numbers when you launch.
+            This website is a product prototype: the deals and impact totals are demo data for design/testing.
           </p>
         </div>
 
-        <div class="heroCard" aria-label="Impact summary preview">
-          <div class="cardTop">
-            <div class="pill">
-              <span class="dot" aria-hidden="true"></span>
-              Live impact snapshot (sample)
-            </div>
-            <div class="mini">
-              <span>Updated:</span>
-              <strong id="updatedAt">—</strong>
-            </div>
+        <div class="card">
+          <div class="sectionHead">
+            <h2 style="margin:0 0 6px; font-size:22px;">What you get with LastBite</h2>
+            <p class="muted">Fast, simple, and focused on surplus — not full menus.</p>
           </div>
 
-          <div class="impactGrid">
-            <div class="impactStat">
-              <div class="label">Meals rescued</div>
-              <div class="value"><span data-count data-target="12500">0</span></div>
-            </div>
-            <div class="impactStat">
-              <div class="label">Food saved (kg)</div>
-              <div class="value"><span data-count data-target="47000">0</span></div>
-            </div>
-            <div class="impactStat">
-              <div class="label">CO₂ avoided (kg)</div>
-              <div class="value"><span data-count data-target="31000">0</span></div>
-            </div>
-            <div class="impactStat">
-              <div class="label">Dollars saved</div>
-              <div class="value">$<span data-count data-target="280000">0</span></div>
-            </div>
-          </div>
+          <ul class="list">
+            <li><strong>Guaranteed discounts:</strong> typically 40–70% off.</li>
+            <li><strong>Clear pickup windows:</strong> timed around partner closing hours.</li>
+            <li><strong>Filters that matter:</strong> vegetarian options, nut-free notes, and more.</li>
+            <li><strong>Impact tracking:</strong> estimated food and CO₂ saved per order.</li>
+            <li><strong>Social enterprise:</strong> 5% of profits donated to the UN World Food Programme (WFP).</li>
+          </ul>
 
-          <div class="donationBox">
-            <div class="donationLeft">
-              <strong>Social enterprise pledge</strong>
-              <p>We donate <strong>5% of profits</strong> to the UN World Food Programme (WFP).</p>
-            </div>
-            <a class="btn btnSmall btnGhost" href="#method">How we calculate</a>
+          <div style="margin-top:14px;">
+            <a class="btn btnPrimary" href="impact.html" style="width:100%;">View Impact Tracker</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Big metrics (like FoodHero) -->
-    <section id="metrics" class="section">
+    <section class="section soft">
       <div class="container">
         <div class="sectionHead">
-          <h2>Impact totals</h2>
-          <p class="muted">
-            Keep these as “sample” for a mock site, or wire them to your backend later.
-          </p>
+          <h2>Impact totals (demo)</h2>
+          <p class="muted">Example totals shown the way they would appear once LastBite is live.</p>
         </div>
 
         <div class="tiles">
-          <article class="tile">
-            <div class="tileIcon" aria-hidden="true">
-              <!-- simple inline svg -->
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M7 10c0-3 2-6 5-7 3 1 5 4 5 7 0 4-3 7-5 9-2-2-5-5-5-9Z" stroke="currentColor" stroke-width="1.7"/>
-                <path d="M12 19v3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
-              </svg>
+          <div class="tile">
+            <div class="tileTop">
+              <div class="big"><span data-count data-target="12500">0</span></div>
+              <div class="unit">meals</div>
             </div>
+            <div class="tileLabel">Meals rescued</div>
+            <div class="tileNote">Surplus meals sold instead of wasted.</div>
+          </div>
+
+          <div class="tile">
             <div class="tileTop">
               <div class="big"><span data-count data-target="47000">0</span></div>
               <div class="unit">kg</div>
             </div>
             <div class="tileLabel">Food saved</div>
-            <div class="tileNote">Surplus items sold instead of discarded.</div>
-          </article>
+            <div class="tileNote">Estimated weight of rescued surplus items.</div>
+          </div>
 
-          <article class="tile">
-            <div class="tileIcon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M4 14c2-4 5-6 8-6s6 2 8 6c-2 4-5 6-8 6s-6-2-8-6Z" stroke="currentColor" stroke-width="1.7"/>
-                <path d="M9 14h6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
-              </svg>
-            </div>
+          <div class="tile">
             <div class="tileTop">
               <div class="big"><span data-count data-target="31000">0</span></div>
-              <div class="unit">kg</div>
+              <div class="unit">kg CO₂</div>
             </div>
             <div class="tileLabel">CO₂ avoided</div>
             <div class="tileNote">Estimated emissions avoided from landfill waste.</div>
-          </article>
+          </div>
 
-          <article class="tile">
-            <div class="tileIcon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M7 8h10v12H7V8Z" stroke="currentColor" stroke-width="1.7"/>
-                <path d="M9 6h6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
-                <path d="M9 12h6M9 16h6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
-              </svg>
-            </div>
+          <div class="tile">
             <div class="tileTop">
               <div class="big">$<span data-count data-target="280000">0</span></div>
               <div class="unit">CAD</div>
             </div>
-            <div class="tileLabel">Saved by customers</div>
-            <div class="tileNote">Discounted surplus meals vs typical menu value.</div>
-          </article>
-
-          <article class="tile">
-            <div class="tileIcon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M6 20V9a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v11" stroke="currentColor" stroke-width="1.7"/>
-                <path d="M9 20v-5h6v5" stroke="currentColor" stroke-width="1.7"/>
-                <path d="M10 10h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <div class="tileTop">
-              <div class="big"><span data-count data-target="125">0</span></div>
-              <div class="unit">partners</div>
-            </div>
-            <div class="tileLabel">Participating merchants</div>
-            <div class="tileNote">Restaurants, cafés, bakeries, and grocers.</div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- How impact is created -->
-    <section id="story" class="section soft">
-      <div class="container">
-        <div class="sectionHead">
-          <h2>How LastBite creates impact</h2>
-          <p class="muted">Designed around closing-time surplus, not full-menu delivery.</p>
+            <div class="tileLabel">Customer savings</div>
+            <div class="tileNote">Discounted price compared to typical menu value.</div>
+          </div>
         </div>
 
-        <div class="steps">
-          <article class="step">
-            <div class="stepNum">1</div>
-            <h3>Rescue surplus</h3>
-            <p>Partners list end-of-day items that would likely be wasted. Customers reserve instantly.</p>
-          </article>
-
-          <article class="step">
-            <div class="stepNum">2</div>
-            <h3>Make it affordable</h3>
-            <p>Big discounts (typically 40–70%) create accessible meals while partners earn incremental revenue.</p>
-          </article>
-
-          <article class="step">
-            <div class="stepNum">3</div>
-            <h3>Show the proof</h3>
-            <p>The app tracks meals rescued and estimated CO₂ avoided, plus community totals.</p>
-          </article>
-
-          <article class="step">
-            <div class="stepNum">4</div>
-            <h3>Give back</h3>
-            <p>5% of profits are donated to the UN World Food Programme (WFP).</p>
-          </article>
-        </div>
-
-        <div class="callout">
+        <div class="callout" style="margin-top:14px;">
           <div>
-            <strong>Did you know?</strong>
+            <strong>Why this matters:</strong>
             <p class="muted">
-              Add a city-specific or country-specific food-waste statistic here once you’ve chosen your launch region.
+              Food waste is an environmental and affordability problem. LastBite turns end-of-day surplus into
+              low-cost meals while helping merchants earn incremental revenue.
             </p>
           </div>
-          <a class="btn btnGhost" href="#cta">Join beta</a>
+          <a class="btn btnGhost" href="mission.html">Read our mission</a>
         </div>
       </div>
     </section>
 
-    <!-- Timeline (similar to FoodHero’s year-by-year section) -->
-    <section id="timeline" class="section">
+    <section class="section">
       <div class="container">
         <div class="sectionHead">
-          <h2>Milestones</h2>
-          <p class="muted">A timeline layout you can keep as “future plan” or replace with real history.</p>
+          <h2>Get early access</h2>
+          <p class="muted">Join the beta list to receive launch updates and early access.</p>
         </div>
 
-        <div class="timeline">
-          <div class="timelineTabs" role="tablist" aria-label="Timeline years">
-            <button class="tab isActive" role="tab" aria-selected="true" data-tab="t1">2026</button>
-            <button class="tab" role="tab" aria-selected="false" data-tab="t2">2027</button>
-            <button class="tab" role="tab" aria-selected="false" data-tab="t3">2028</button>
-            <button class="tab" role="tab" aria-selected="false" data-tab="t4">2029</button>
-          </div>
-
-          <div class="timelinePanels">
-            <article class="panel isActive" id="t1" role="tabpanel">
-              <h3>Beta launch in one dense neighborhood</h3>
-              <p class="muted">10–15 partners, 6–8 week pilot. Measure meals sold, ratings, and partner satisfaction.</p>
-              <ul>
-                <li>Pickup + delivery in a closing-time window</li>
-                <li>Core dietary filters</li>
-                <li>Impact tracking MVP</li>
-              </ul>
-            </article>
-
-            <article class="panel" id="t2" role="tabpanel">
-              <h3>Expand coverage + improve operations</h3>
-              <p class="muted">Add neighborhoods, tighten routing, and improve partner tooling.</p>
-              <ul>
-                <li>Partner dashboard improvements</li>
-                <li>Better batching for delivery</li>
-                <li>More merchant categories</li>
-              </ul>
-            </article>
-
-            <article class="panel" id="t3" role="tabpanel">
-              <h3>Groceries + bakery boxes</h3>
-              <p class="muted">Introduce produce boxes, breakfast boxes, and surplus staples.</p>
-              <ul>
-                <li>Category browsing by surplus type</li>
-                <li>Improved inventory forecasting</li>
-                <li>Optional reusable packaging pilots</li>
-              </ul>
-            </article>
-
-            <article class="panel" id="t4" role="tabpanel">
-              <h3>Subscriptions + corporate programs</h3>
-              <p class="muted">Recurring plans and workplace “waste-reduction lunch” programs.</p>
-              <ul>
-                <li>Subscription bundles</li>
-                <li>Corporate ordering workflows</li>
-                <li>Insights reports for partners</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Methodology -->
-    <section id="method" class="section soft">
-      <div class="container">
-        <div class="sectionHead">
-          <h2>How we estimate impact</h2>
-          <p class="muted">
-            Keep it simple and transparent. The goal is consistent measurement, not perfect precision.
-          </p>
-        </div>
-
-        <div class="methodGrid">
-          <article class="methodCard">
-            <h3>Food saved</h3>
-            <p class="muted">
-              Calculated from the number of orders and an average weight per rescued item or bag.
-              Replace assumptions once you have measured weights from partners.
-            </p>
-          </article>
-          <article class="methodCard">
-            <h3>CO₂ avoided</h3>
-            <p class="muted">
-              Estimated using a configurable emissions factor (kg CO₂ per kg food).
-              Publish the factor and update it if your methodology changes.
-            </p>
-          </article>
-          <article class="methodCard">
-            <h3>Dollars saved</h3>
-            <p class="muted">
-              Estimated as menu value minus price paid (or a blended discount rate).
-              Show ranges if you want to avoid over-precision.
-            </p>
-          </article>
-          <article class="methodCard">
-            <h3>Donations</h3>
-            <p class="muted">
-              LastBite donates 5% of profits to WFP. Once live, show totals and cadence (monthly/quarterly).
-            </p>
-          </article>
-        </div>
-
-        <div class="miniForm">
-          <h3>Optional: quick impact calculator (demo)</h3>
-          <p class="muted">Use this for a lightweight interactive element on the page.</p>
-
-          <form id="calcForm" class="calc" autocomplete="off">
-            <label>
-              Orders rescued
-              <input id="orders" type="number" min="0" value="10" />
-            </label>
-
-            <label>
-              Avg kg per order (assumption)
-              <input id="kgPerOrder" type="number" min="0" step="0.1" value="1.2" />
-            </label>
-
-            <label>
-              kg CO₂ per kg food (assumption)
-              <input id="co2Factor" type="number" min="0" step="0.1" value="0.7" />
-            </label>
-
-            <button class="btn btnPrimary" type="submit">Calculate</button>
+        <div class="card">
+          <form id="waitlistForm">
+            <div class="formRow">
+              <label>
+                Email
+                <input name="email" type="email" placeholder="you@example.com" required />
+              </label>
+              <button class="btn btnPrimary" type="submit">Join beta</button>
+            </div>
+            <p class="fine" id="waitlistMsg" role="status" style="margin-top:10px;"></p>
           </form>
-
-          <div class="calcOut" aria-live="polite">
-            <div><span class="calcLabel">Food saved:</span> <strong id="outFood">—</strong></div>
-            <div><span class="calcLabel">CO₂ avoided:</span> <strong id="outCo2">—</strong></div>
-          </div>
         </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section id="cta" class="cta">
-      <div class="container ctaGrid">
-        <div>
-          <h2>Help launch LastBite in your neighborhood</h2>
-          <p class="muted">
-            Join the beta list for early access to surplus deals and updates on partner locations.
-          </p>
-        </div>
-
-        <form id="waitlist" class="waitlist">
-          <label>
-            Email
-            <input name="email" type="email" placeholder="you@example.com" required />
-          </label>
-          <button class="btn btnPrimary" type="submit">Join beta</button>
-          <p class="fine" id="waitlistMsg" role="status"></p>
-        </form>
       </div>
     </section>
   </main>
@@ -398,14 +177,12 @@
       </div>
 
       <div class="footLinks">
-        <a href="#metrics">Metrics</a>
-        <a href="#timeline">Timeline</a>
-        <a href="#method">Method</a>
+        <a href="browse.html">Browse Deals</a>
+        <a href="mission.html">Our Mission</a>
+        <a href="impact.html">Impact</a>
       </div>
 
-      <div class="fine">
-        © <span id="year"></span> LastBite. Replace with your legal links (Privacy/Terms).
-      </div>
+      <div class="fine">© <span id="year"></span> LastBite.</div>
     </div>
   </footer>
 
