@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LastBite | Our Mission</title>
+  <meta name="description" content="LastBite’s mission: reduce food waste by converting end-of-day surplus into affordable meals, supporting local businesses, and donating 5% of profits to WFP." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="LastBite home">
+        <span class="mark" aria-hidden="true">LB</span>
+        <span class="brandText">
+          <strong>LastBite</strong>
+          <small>Our Mission</small>
+        </span>
+      </a>
+
+      <button class="menuBtn" id="menuBtn" aria-expanded="false" aria-controls="menu">
+        <span class="sr">Open menu</span>
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav class="menu" id="menu" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="browse.html">Browse Deals</a>
+        <a href="how-it-works.html">How it Works</a>
+        <a class="isActive" href="mission.html">Our Mission</a>
+        <a href="impact.html">Impact Tracker</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container heroGrid">
+        <div>
+          <p class="kicker">Social enterprise</p>
+          <h1>Make surplus food useful again.</h1>
+          <p class="lead">
+            LastBite exists to reduce food waste by turning end-of-day surplus into affordable meals.
+            We help local businesses earn incremental revenue, help customers save money, and reduce the
+            environmental footprint of discarded food.
+          </p>
+
+          <div class="heroBadges" role="list">
+            <span class="badge">Affordable meals</span>
+            <span class="badge">Waste reduction</span>
+            <span class="badge">Local business support</span>
+          </div>
+
+          <div class="callout" style="margin-top:14px;">
+            <div>
+              <strong>Our pledge:</strong>
+              <p class="muted">We donate <strong>5% of profits</strong> to the UN World Food Programme (WFP).</p>
+            </div>
+            <a class="btn btnGhost" href="impact.html">See impact</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="sectionHead">
+            <h2 style="margin:0 0 6px; font-size:22px;">Why this matters</h2>
+            <p class="muted">Food waste is avoidable, costly, and unnecessary.</p>
+          </div>
+
+          <ul class="list">
+            <li><strong>Affordability:</strong> rising food costs make cheap, convenient meals more important than ever.</li>
+            <li><strong>Environment:</strong> wasted food means wasted energy, water, packaging, and transport.</li>
+            <li><strong>Local business:</strong> surplus is lost revenue; selling it improves margins without extra kitchen load.</li>
+            <li><strong>Community:</strong> every rescued order is a small, repeatable action that adds up.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>Our mission pillars</h2>
+          <p class="muted">LastBite is designed around three outcomes that reinforce each other.</p>
+        </div>
+
+        <div class="grid2">
+          <div class="card">
+            <h3 style="margin:0 0 8px;">1) Reduce waste</h3>
+            <p class="muted">
+              We focus on end-of-day surplus because it’s the most direct and measurable opportunity to rescue
+              food that would otherwise be discarded.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 style="margin:0 0 8px;">2) Improve affordability</h3>
+            <p class="muted">
+              Discounts (typically 40–70%) make good food accessible to students, young workers, and families
+              without lowering quality.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 style="margin:0 0 8px;">3) Support local partners</h3>
+            <p class="muted">
+              Partners earn incremental revenue, reduce disposal, and gain a sustainability story that customers
+              can participate in.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 style="margin:0 0 8px;">How we keep it simple</h3>
+            <p class="muted">
+              Surplus-only listings, short pickup windows, and off-peak batching keep operations lean so fees can
+              remain lower than traditional delivery platforms.
+            </p>
+          </div>
+        </div>
+
+        <div class="callout" style="margin-top:14px;">
+          <div>
+            <strong>What success looks like:</strong>
+            <p class="muted">
+              More meals rescued per neighborhood, more savings per customer, and fewer bins of perfectly good food
+              at closing time.
+            </p>
+          </div>
+          <a class="btn btnPrimary" href="browse.html">Browse demo deals</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>Join the mission</h2>
+          <p class="muted">Get early access and help shape LastBite’s launch.</p>
+        </div>
+
+        <div class="card">
+          <form id="missionWaitlistForm">
+            <div class="formRow">
+              <label>
+                Email
+                <input name="email" type="email" placeholder="you@example.com" required />
+              </label>
+              <button class="btn btnPrimary" type="submit">Join beta</button>
+            </div>
+            <p class="fine" id="missionWaitlistMsg" role="status" style="margin-top:10px;"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footGrid">
+      <div class="footBrand">
+        <span class="mark" aria-hidden="true">LB</span>
+        <div>
+          <strong>LastBite</strong>
+          <div class="muted">Surplus-only. Impact-first.</div>
+        </div>
+      </div>
+
+      <div class="footLinks">
+        <a href="how-it-works.html">How it Works</a>
+        <a href="browse.html">Browse Deals</a>
+        <a href="impact.html">Impact</a>
+      </div>
+
+      <div class="fine">© <span id="year"></span> LastBite.</div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
