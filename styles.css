@@ -475,4 +475,9 @@ input{
 .header.isCompact .menu a{
   font-size: 14px;
 }
-
+.logoImg{
+  height: 40px;
+  width: auto;
+  display: block;
+  border-radius: 12px;
+}
