@@ -434,3 +434,45 @@ input{
   .grid2{ grid-template-columns: 1fr; }
   .formRow{ grid-template-columns: 1fr; }
 }
+/* Header transitions + compact mode */
+.header{
+  transition: box-shadow 200ms ease, background-color 200ms ease, transform 200ms ease;
+}
+
+.nav{
+  transition: padding 200ms ease;
+}
+
+/* Default: slightly skinnier than before */
+.nav{
+  padding: 10px 0; /* was 14px 0 */
+}
+
+/* Compact header on scroll */
+.header.isCompact{
+  background: rgba(255,255,255,.92);
+  box-shadow: 0 10px 30px rgba(2,6,23,.08);
+}
+
+.header.isCompact .nav{
+  padding: 6px 0; /* collapses more */
+}
+
+.header.isCompact .mark{
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+}
+
+.header.isCompact .logoImg{
+  height: 34px; /* if you’re using the image logo */
+}
+
+.header.isCompact .brandText small{
+  display: none; /* removes tagline to tighten header */
+}
+
+.header.isCompact .menu a{
+  font-size: 14px;
+}
+
