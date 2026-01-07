@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LastBite | Impact Tracker</title>
+  <meta name="description" content="Track meals rescued, food saved, CO2 avoided, and customer savings. LastBite donates 5% of profits to WFP." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="LastBite home">
+        <span class="mark" aria-hidden="true">LB</span>
+        <span class="brandText">
+          <strong>LastBite</strong>
+          <small>Impact Tracker</small>
+        </span>
+      </a>
+
+      <button class="menuBtn" id="menuBtn" aria-expanded="false" aria-controls="menu">
+        <span class="sr">Open menu</span>
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav class="menu" id="menu" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="browse.html">Browse Deals</a>
+        <a href="how-it-works.html">How it Works</a>
+        <a href="mission.html">Our Mission</a>
+        <a class="isActive" href="impact.html">Impact Tracker</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container heroGrid">
+        <div>
+          <p class="kicker">Impact you can measure</p>
+          <h1>Every rescued order adds up.</h1>
+          <p class="lead">
+            LastBite tracks estimated meals rescued, food saved, CO₂ avoided, and customer savings.
+            These totals are demo data for a prototype website.
+          </p>
+
+          <div class="heroActions">
+            <a class="btn btnPrimary" href="browse.html">Rescue a deal (demo)</a>
+            <a class="btn btnGhost" href="mission.html">Why we track this</a>
+          </div>
+
+          <p class="fine">
+            Method note: estimates use simple assumptions so metrics stay consistent over time.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="sectionHead">
+            <h2 style="margin:0 0 6px; font-size:22px;">Community totals (demo)</h2>
+            <p class="muted">How the tracker would look once live.</p>
+          </div>
+
+          <div class="tiles" style="grid-template-columns: 1fr 1fr; gap:10px;">
+            <div class="tile" style="box-shadow:none;">
+              <div class="tileTop">
+                <div class="big"><span data-count data-target="12500">0</span></div>
+                <div class="unit">meals</div>
+              </div>
+              <div class="tileLabel">Meals rescued</div>
+              <div class="tileNote">Surplus meals sold instead of wasted.</div>
+            </div>
+
+            <div class="tile" style="box-shadow:none;">
+              <div class="tileTop">
+                <div class="big"><span data-count data-target="47000">0</span></div>
+                <div class="unit">kg</div>
+              </div>
+              <div class="tileLabel">Food saved</div>
+              <div class="tileNote">Estimated weight of rescued surplus items.</div>
+            </div>
+
+            <div class="tile" style="box-shadow:none;">
+              <div class="tileTop">
+                <div class="big"><span data-count data-target="31000">0</span></div>
+                <div class="unit">kg CO₂</div>
+              </div>
+              <div class="tileLabel">CO₂ avoided</div>
+              <div class="tileNote">Estimated emissions avoided from landfill waste.</div>
+            </div>
+
+            <div class="tile" style="box-shadow:none;">
+              <div class="tileTop">
+                <div class="big">$<span data-count data-target="280000">0</span></div>
+                <div class="unit">CAD</div>
+              </div>
+              <div class="tileLabel">Customer savings</div>
+              <div class="tileNote">Discounted price vs typical menu value.</div>
+            </div>
+          </div>
+
+          <div class="callout" style="margin-top:12px;">
+            <div>
+              <strong>Social enterprise:</strong>
+              <p class="muted">LastBite donates <strong>5% of profits</strong> to the UN World Food Programme (WFP).</p>
+            </div>
+            <a class="btn btnGhost" href="mission.html">Our Mission</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>Quick impact calculator</h2>
+          <p class="muted">
+            Estimate impact for a number of rescued orders using transparent assumptions.
+          </p>
+        </div>
+
+        <div class="card">
+          <form id="calcForm">
+            <div class="grid2">
+              <label>
+                Orders rescued
+                <input id="orders" type="number" min="0" value="10" />
+              </label>
+
+              <label>
+                Avg kg of food per order
+                <input id="kgPerOrder" type="number" min="0" step="0.1" value="1.2" />
+              </label>
+
+              <label>
+                kg CO₂ avoided per kg food
+                <input id="co2Factor" type="number" min="0" step="0.1" value="0.7" />
+              </label>
+
+              <label>
+                Avg customer savings per order (CAD)
+                <input id="avgSaved" type="number" min="0" step="1" value="8" />
+              </label>
+            </div>
+
+            <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+              <button class="btn btnPrimary" type="submit">Calculate</button>
+              <a class="btn btnGhost" href="how-it-works.html">How we create impact</a>
+            </div>
+          </form>
+
+          <div class="callout" style="margin-top:14px;">
+            <div>
+              <strong>Your estimate:</strong>
+              <p class="muted" style="margin-top:6px;">
+                <span id="outMeals">—</span> • <span id="outFood">—</span> • <span id="outCo2">—</span> • <span id="outSaved">—</span>
+              </p>
+            </div>
+            <a class="btn btnGhost" href="browse.html">Browse deals</a>
+          </div>
+
+          <p class="fine" style="margin-top:10px;">
+            The calculator is an estimate for communication and consistency; real values vary by item type, weight, and operations.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>What we track (and why)</h2>
+          <p class="muted">The metrics are designed to be understandable and hard to game.</p>
+        </div>
+
+        <div class="grid2">
+          <div class="card">
+            <h3 style="margin:0 0 8px;">Meals rescued</h3>
+            <p class="muted">A simple count of completed pickups/deliveries tied to surplus listings.</p>
+          </div>
+
+          <div class="card">
+            <h3 style="margin:0 0 8px;">Food saved (kg)</h3>
+            <p class="muted">Estimated weight based on order types and measured averages from partners over time.</p>
+          </div>
+
+          <div class="card">
+            <h3 style="margin:0 0 8px;">CO₂ avoided</h3>
+            <p class="muted">A consistent emissions factor applied to food saved, published for transparency.</p>
+          </div>
+
+          <div class="card">
+            <h3 style="margin:0 0 8px;">Customer savings</h3>
+            <p class="muted">Difference between menu value and price paid (or a blended discount model).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footGrid">
+      <div class="footBrand">
+        <span class="mark" aria-hidden="true">LB</span>
+        <div>
+          <strong>LastBite</strong>
+          <div class="muted">Surplus-only. Impact-first.</div>
+        </div>
+      </div>
+
+      <div class="footLinks">
+        <a href="browse.html">Browse Deals</a>
+        <a href="mission.html">Our Mission</a>
+        <a href="how-it-works.html">How it Works</a>
+      </div>
+
+      <div class="fine">© <span id="year"></span> LastBite.</div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
